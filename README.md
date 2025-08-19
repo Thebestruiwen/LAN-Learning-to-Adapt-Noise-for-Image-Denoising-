@@ -1,7 +1,7 @@
 # LAN: Learning to Adapt Noise for Image Denoising论文复现
-原作者：Changjin Kim, Tae Hyun Kim, Sungyong Baik\n
-源码链接：https://github.com/chjinny/LAN\n
-论文链接: [[CVPR]](https://openaccess.thecvf.com/content/CVPR2024/html/Kim_LAN_Learning_to_Adapt_Noise_for_Image_Denoising_CVPR_2024_paper.html)
+- 原作者：Changjin Kim, Tae Hyun Kim, Sungyong Baik
+- 源码链接：https://github.com/chjinny/LAN
+- 论文链接: [[CVPR]](https://openaccess.thecvf.com/content/CVPR2024/html/Kim_LAN_Learning_to_Adapt_Noise_for_Image_Denoising_CVPR_2024_paper.html)
 
 
 
@@ -23,12 +23,10 @@
 </p>
 
 ## Prepare Model and Dataset
-```bash
-git clone https://github.com/chjinny/LAN.git
-python prepare.py
-```
-- 数据集 : 在我的另一个仓库HSI trainset里，下载即可，注意调整文件里的数据库地址。
+
+- 数据集 : 在我的另一个仓库HSI trainset里，下载即可，注意调整文件里的数据集地址。
 - Resotmer模型 : 同上
+- Uformer模型 ：同上
 
 ## Adaptation
 ```bash
