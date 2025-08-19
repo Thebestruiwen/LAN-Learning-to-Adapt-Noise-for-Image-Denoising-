@@ -25,8 +25,8 @@
 ## Prepare Model and Dataset
 
 - 数据集 : 在我的另一个仓库HSI trainset里，下载即可，注意调整文件里的数据集地址。
-- Resotmer模型 : 同上
-- Uformer模型 ：同上
+- Resotmer模型 : (https://github.com/swz30/Restormer)
+- Uformer模型 ：(https://github.com/ZhendongWang6/Uformer)
 
 ## Adaptation
 ```bash
