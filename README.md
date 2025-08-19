@@ -1,12 +1,10 @@
-# LAN: Learning to Adapt Noise for Image Denoising
-Changjin Kim, Tae Hyun Kim, Sungyong Baik
-
-A sample code for our framework.
-
-Paper link : [[CVPR]](https://openaccess.thecvf.com/content/CVPR2024/html/Kim_LAN_Learning_to_Adapt_Noise_for_Image_Denoising_CVPR_2024_paper.html)
+# LAN: Learning to Adapt Noise for Image Denoising论文复现
+原作者：Changjin Kim, Tae Hyun Kim, Sungyong Baik
+源码链接：https://github.com/chjinny/LAN
+论文链接: [[CVPR]](https://openaccess.thecvf.com/content/CVPR2024/html/Kim_LAN_Learning_to_Adapt_Noise_for_Image_Denoising_CVPR_2024_paper.html)
 
 
-> **Abstract:** *Removing noise from images a.k.a image denoising can be a very challenging task since the type and amount of noise can greatly vary for each image due to many factors including a camera model and capturing environments. While there have been striking improvements in image denoising with the emergence of advanced deep learning architectures and real-world datasets recent denoising networks struggle to maintain performance on images with noise that has not been seen during training. One typical approach to address the challenge would be to adapt a denoising network to new noise distribution. Instead in this work we shift our attention to the input noise itself for adaptation rather than adapting a network. Thus we keep a pretrained network frozen and adapt an input noise to capture the fine-grained deviations. As such we propose a new denoising algorithm dubbed Learning-to-Adapt-Noise (LAN) where a learnable noise offset is directly added to a given noisy image to bring a given input noise closer towards the noise distribution a denoising network is trained to handle. Consequently the proposed framework exhibits performance improvement on images with unseen noise displaying the potential of the proposed research direction.*
+
 
 ## Table of Contents
 - [Overview](#overview)
