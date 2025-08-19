@@ -1,6 +1,6 @@
 # LAN: Learning to Adapt Noise for Image Denoising论文复现
-原作者：Changjin Kim, Tae Hyun Kim, Sungyong Baik
-源码链接：https://github.com/chjinny/LAN
+原作者：Changjin Kim, Tae Hyun Kim, Sungyong Baik\n
+源码链接：https://github.com/chjinny/LAN\n
 论文链接: [[CVPR]](https://openaccess.thecvf.com/content/CVPR2024/html/Kim_LAN_Learning_to_Adapt_Noise_for_Image_Denoising_CVPR_2024_paper.html)
 
 
@@ -27,14 +27,19 @@
 git clone https://github.com/chjinny/LAN.git
 python prepare.py
 ```
-- Dataset : [PolyU](https://github.com/csjunxu/PolyU-Real-World-Noisy-Images-Dataset)
-- Model : [Restormer](https://github.com/swz30/Restorme)
-  - Download the [pretrained weight file](https://drive.google.com/drive/folders/1Qwsjyny54RZWa7zC4Apg7exixLBo4uF0) and place it as ```./checkpoint/real_denoising.pth```.
+- 数据集 : 在我的另一个仓库HSI trainset里，下载即可，注意调整文件里的数据库地址。
+- Resotmer模型 : 同上
 
 ## Adaptation
 ```bash
-python main.py --method {lan, finetune} --self-loss {zsn2n, nbr2nbr}
+python main.py --model Restormer #选择模型
+ --dataset {"poly-U", "Nam",","FIG3"} #选择数据集
+ --method {"finetune", "lan"} #选择方法
+ --self_loss {zsn2n, nbr2nbr}#选择损失函数
+ --num_samples 1 #设定样本数量，默认为全部样本
+ --num_GPU 1 #选择使用GPU序号，默认为0
 ```
+## Package
 
 ## Citation
 ```bibtex
